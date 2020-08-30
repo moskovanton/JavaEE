@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="navbar_index.css">
+    </head>
+    <body>
+        <nav class="two">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="report.jsp">Отчет</a></li>
+                <li><a href="recommendation.jsp">Рекомендации</a></li>
+                <li><a href="statistic.jsp">Статистика</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Ввод параметров</h1>
+        
+        <form method="get" action="MainFormServlet">
+            <table>
+                <tr>
+                    <td>Путь к файлу:</td>
+                    <td><input type="text" name="filePath"></td>
+                </tr>
+                <tr>
+                    <td style = "padding-right: 157px;">Номер пути:</td>
+                    <td>
+                            <input type="radio" name="way" value="first"  checked>I 
+                            <input type="radio" name="way" value="second">II<br>   
+                    </td>
+                </tr>
+                <tr>
+                    <td>Тип отображения:</td>
+                    <td>
+                            <input type="radio" name="outputSize" value="full">Полный 
+                            <input type="radio" name="outputSize" value="standart" checked>Краткий<br>   
+                    </td>
+                </tr>
+                <tr>
+                    <td>Фильтр по событиям:</td>
+                    <td>
+                        <select name="filter" style="width: 13em;">
+                            <option selected value="notNeeded">Не требуется</option>
+                            <option value="ROAZ">По РОАЗ</option>
+                            <option value="OpenASD">По Откр АСД</option>
+                        </select>    
+                    </td>
+                </tr>
+                <tr>
+                    <td>Вывод в диапазоне:</td>
+                    <td>
+                        <input type="checkbox" name="timeFilter" value="ДА">Да<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Начало диапазона:</td> 
+                    <td><input type="text" name="timeFrom" value="00:00:00"></td>
+                </tr>
+                <tr>
+                    <td>Конец диапазона:</td> 
+                    <td><input type="text" name="timeTo" value="23:59:59"></td>
+                </tr>
+                <tr>
+                    <td>Имя нового файла:</td> 
+                    <td><input type="text" name="fileName"></td>
+                </tr>
+                <tr>
+                    <td align="right" colspan="2"><input type="submit" value="Прочитать"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

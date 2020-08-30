@@ -1,0 +1,11 @@
+com\mycompany\webappkupd\JAXRSConfiguration.class
+KUDP\Way.class
+KUDP\WayHandler.class
+KUDP\BitReader.class
+com\mycompany\webappkupd\MainFormServlet.class
+KUDP\CSVReader.class
+KUDP\Statistics.class
+com\mycompany\webappkupd\resources\JavaEE8Resource.class
+KUDP\KUDP.class
+KUDP\Recommendations.class
+KUDP\CSVWriter.class

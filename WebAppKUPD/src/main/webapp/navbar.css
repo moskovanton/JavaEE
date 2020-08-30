@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+body {margin:0;}
+h2 {
+  font-family: monospace;
+  color: #606060;
+  font-family: 'Orienta', sans-serif;
+}
+ul {
+  list-style: none; 
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+i {
+  margin-right: 10px;
+}
+
+.two ul {
+  background: #e6f1f5;
+  overflow: hidden;
+  padding: 0;
+}
+.two li {
+  float: left;
+}
+.two a {
+  display: block;
+  padding: 1em;
+  border-right: 1px solid #ADC0CE;
+  color: #002929;
+}
+.two a:hover {background: #d1dbe3}
+
+table {
+    width: 60%; 
+    border-collapse: collapse; 
+    height: 1000px; 
+    overflow: scroll; 
+    margin-left: 20px;}
+table thead tr {
+    color: #ffffff; 
+    font-weight: bold; 
+    background: #00bf80; 
+    text-align: center;}
+table thead tr td {
+    border: 1px solid #01ab73; 
+    text-align: center;}
+table tbody tr td {
+    border: 1px solid #e8e9eb; 
+    text-align: center;}
+table tbody tr:nth-child(2n) {
+    background: #f4f4f4; 
+    text-align: center;}
+table tbody tr:hover {
+    background: #ebffe8; 
+    text-align: center;}
+
+h3, p {
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Orienta', sans-serif;
+    padding-left: 20px;
+}
